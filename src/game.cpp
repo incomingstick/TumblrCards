@@ -107,6 +107,7 @@ void Game::update() {
     if(player.get_mana() > 0 && choice != 0) {
         player.cast(choice - 1);
     	update();
+		return;
     } else {
         /* "Combat phase" */
 		// TODO
