@@ -33,7 +33,7 @@ The [`TumblrCards`](https://github.com/TumblrCommunity/TumblrCards) repository i
 
 ### Team Communication
 
-This project will be using an invite only [Slack](https://compscitumblr.slack.com) channel. If you would like an invite, you can message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask).
+This project will be using an invite only [Discord](https://www.discordapp.com) channel. If you would like an invite, you can message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask).
 
 ## Building
 
