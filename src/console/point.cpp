@@ -31,7 +31,8 @@ Point::Point(int x_coord, int y_coord) {
  * Point clone constructor 
  */
 Point::Point(const Point& clone) {
-    // TODO
+    x = clone.x;
+    y = clone.y;
 }
 
 /*
