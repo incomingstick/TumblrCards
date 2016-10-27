@@ -14,7 +14,7 @@
     (___)                       \:/
 ```
 
-TumblrCards (we are working on the name) is a text based multiplayer strategy card game written by members of the Tumblr Computer Science community.
+TumblrCards (we are working on the name) is a text-based multiplayer strategy card game written by members of the Tumblr Computer Science community.
 
 The [`TumblrCards`](https://github.com/TumblrCommunity/TumblrCards) repository is where we do development and there are many ways you can participate in the project, for example:
 
@@ -26,20 +26,20 @@ The [`TumblrCards`](https://github.com/TumblrCommunity/TumblrCards) repository i
 
 ## Feedback
 
-* Ask a question on [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the question tag.
-* Request a feature on [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the enhancement tag.
-* File a bug in [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the bug tag.
-* Message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask) with questions or other feedback.
+* Ask a question on [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the question tag
+* Request a feature on [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the enhancement tag
+* File a bug in [GitHub Issues](https://github.com/TumblrCommunity/TumblrCards/issues) with the bug tag
+* Message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask) with questions or other feedback
 
 ### Team Communication
 
-This project will be using an invite only [Slack](https://compscitumblr.slack.com) channel. If you would like an invite, you can message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask).
+This project uses an invite-only [Slack](https://compscitumblr.slack.com) channel. If you would like an invitation, you can message import-os [(incomingstick)](https://github.com/incomingstick) on [Tumblr](https://import-os.tumblr.com/ask).
 
 ## Building
 
 CMake is used to build the project. If you're using an IDE, it may be able to detect the source tree and build settings automatically. No outside libraries are currently used, so most (if not all) systems should be good to go.
 
-To build, make sure you have the following:
+To build, make sure you have the following installed:
 * [CMake](https://cmake.org/) 3.0 or greater
 
 ### Building on *NIX systems
