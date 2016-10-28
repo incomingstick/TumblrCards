@@ -26,7 +26,7 @@ Player::~Player() {
 }
 
 /*
- * Set's the players deck to the selected deck
+ * Sets the players deck to the selected deck
  */
 bool Player::select_deck(Deck selected) {
 	deck = selected;

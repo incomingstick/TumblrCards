@@ -25,8 +25,8 @@ public:
     void print();
     void update();
     void clear();
-    size_t get_width() const { return get_console_width(); };
-    size_t get_height() const { return get_console_height(); };
+    size_t get_width() const { return get_console_width(); }
+    size_t get_height() const { return get_console_height(); }
 };
 
 #endif /* SRC_CONSOLE_H_ */

@@ -19,8 +19,8 @@ public:
     virtual ~Point();
     bool equals(Point pnt);
     Point get_location();
-    int get_x() { return x; };
-    int get_y() { return y; };
+    int get_x() { return x; }
+    int get_y() { return y; }
     void set_location(int x_coord, int y_coord);
     void set_location(Point pnt);
     std::string to_string();
