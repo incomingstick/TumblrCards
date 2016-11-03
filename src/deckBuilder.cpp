@@ -49,7 +49,7 @@ bool DeckBuilder::load_decklists() {
                 load_deck(ent->d_name);
         }
         return true;
-	} else return false;;
+	} else return false;
 }
 
 /*
@@ -61,7 +61,7 @@ bool DeckBuilder::load_deck(std::string file) {
 	// proceed if file is opened
     if(deck_file.is_open()) {
 		
-		// creats a deck of the given file name
+		// creates a deck of the given file name
         Deck* deck = new Deck(file.substr(0, file.find(".lst")));
 
 		// confirms the deck does not already exist
@@ -85,7 +85,7 @@ bool DeckBuilder::load_deck(std::string file) {
             ss << line.substr(line.find('X')+1);
             ss >> num;
 
-			// Adds a crd of the given name for each num
+			// Adds a card of the given name for each num
             for(int i = 0; i < num; i++) {
                 Card* card = new Card();
                 card->build_card(line.substr(0, line.find('X')-1));
@@ -119,7 +119,7 @@ bool DeckBuilder::save_deck(Deck deck) {
         save << deck.to_file();
     } else return false;
 
-	// Close the file and inform the user of a sucessful save
+	// Close the file and inform the user of a successful save
     save.close();
     cout << "Deck Saved!" << endl;
 
@@ -148,7 +148,7 @@ void DeckBuilder::new_deck() {
 		// If the deck already exists, we ask to overwrite the deck list
 	    if(name == deck->get_name()) {
 	        cout << "Deck " << name << " already exists! " << deck->get_name() << endl;
-	        cout << "Would you like to overwright (y or n)? ";
+	        cout << "Would you like to overwrite (y or n)? ";
 	        cin >> in;
 
 			// Overwrite the deck
@@ -157,7 +157,7 @@ void DeckBuilder::new_deck() {
 	        	selected = i;
 	        	break;
 	        }
-			// User declined overwrite, so print menu syste,
+			// User declined overwrite, so print menu system
 			else {
 	        	do print_menu("screen_builder");
 	            while(!get_input());

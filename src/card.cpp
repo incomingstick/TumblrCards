@@ -11,7 +11,7 @@
 using namespace std;
 
 /*
- * Default construcctor
+ * Default constructor
  */
 Card::Card() {
 	// TODO Auto-generated constructor stub

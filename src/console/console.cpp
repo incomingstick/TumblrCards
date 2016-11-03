@@ -39,7 +39,7 @@ bool Console::add_image(ImageMap* image) {
 }
 
 /*
- * Creates an ImageMap based on the inout string
+ * Creates an ImageMap based on the input string
  * and calls the add_image method.
  * returns true when completed.
  */
@@ -51,7 +51,7 @@ bool Console::add_image(string image_str) {
 }
 
 /*
- * Creates an ImageMap based on the inout string
+ * Creates an ImageMap based on the input string
  * at the given (x, y) point and calls the add_image
  * method.
  * returns true when completed.
@@ -91,7 +91,7 @@ void Console::print() {
 
 /*
  * Clears the terminal and images vector before refilling
- * the vecotr with black space.
+ * the vector with black space.
  */
 void Console::clear() { 
     console.clear();
@@ -104,7 +104,7 @@ void Console::clear() {
             row.push_back(' ');
         console.push_back(row);
     }
-};
+}
 
 /*
  * Updates the console to the current ImageMap positions

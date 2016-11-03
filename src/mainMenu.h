@@ -20,10 +20,10 @@ private:
 	// starts a multi-player game
 	void multi_player();
 
-	// moves to a deck list menu
+	// moves to the deck list menu
 	void deck_builder();
 
-	// moves to a settings menu
+	// moves to the settings menu
 	void settings_menu();
 
 	// quits the game
