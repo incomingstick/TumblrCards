@@ -15,5 +15,5 @@ Please list the specific changes involved in this pull request.
   - [ ] Docs/guides updated
   - [ ] Example created ()
 - [ ] Reviewed by Two Core Contributors
-  - [ ] Reveiwed by (#1): @
-  - [ ] Reveiwed by (#2): @
+  - [ ] Reviewed by (#1): @
+  - [ ] Reviewed by (#2): @

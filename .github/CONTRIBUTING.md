@@ -35,7 +35,7 @@ by someone that understand the language.
 
 #### BEGINNER
 - [ ] Start working on Wiki for the game
-- [ ] Fix any and all gramatical/spelling errors
+- [ ] Fix any and all grammatical/spelling errors
 - [ ] Come up with better name than TumblrCards
 - [ ] Add string flags to the Card.trigger() (i.e "ETB" for enters the battlefield) so the ability knows when to trigger.
 - [ ] Create command line arguements in main.cpp
@@ -48,8 +48,8 @@ by someone that understand the language.
 
 #### INTERMEDIATE
 - [ ] Create shape classes (i.e Rectangle) for use in Console API for ease of creating images
-- [ ] Quickly generate unique cards for constructing decks (use best balance of security and speed)
-- [ ] Finish settings class and add actual settings to the game (i.e console size, multi-playuer server, etc.)
+- [ ] Quickly generate unique cards for constructing decks (use the best balance of security and speed)
+- [ ] Finish settings class and add actual settings to the game (i.e console size, multi-player server, etc.)
 - [ ] Create deck editor classes and structure
 - [ ] Create single player AI to play against
 - [ ] Finish Game class unload function
@@ -65,18 +65,18 @@ by someone that understand the language.
 - [ ] Test balance of cards
 
 
-These TODO's are very broad and this list will grow as new idea's are brought to the table and more people begin to contribute.
+These TODO's are very broad and this list will grow as new ideas are brought to the table and more people begin to contribute.
 
 Message me with questions or visit me on Tumblr at import-os.tumblr.com
 
 ### Pull Request
 
-For something to be considered for merging in to master it must be 
+For something to be considered for merging into master it must be 
 submitted as a Pull Request to development first. All Pull Requests 
-will be given at least 24 hours before being merged in to the 
+will be given at least 24 hours before being merged into the 
 development branch. Pull requests may take longer to be merged if more 
-needs to change. On every monday the development branch will have a pull 
-request made to be merged in to the master repository. This pull request 
+needs to change. On every Monday the development branch will have a pull 
+request made to be merged into the master repository. This pull request 
 will sit for one week to be reviewed until it is merged in on Sunday. 
 The weekly pull request may be delayed if more changes need to be made.
 

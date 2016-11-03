@@ -26,8 +26,8 @@ Card::~Card() {
 }
 
 /*
- * Builds tthe card passed on the passed name argument.
- * THis is not optimal and is subject to change.
+ * Build the card passed on the passed name argument.
+ * This is not optimal and is subject to change.
  */
 void Card::build_card(string arg) {
 	// TODO have card stats based on
@@ -99,7 +99,7 @@ bool Card::trigger() {
 }
 
 /*
- * Prints the card name in the form:
+ * Print the card name in the form:
  * NAME
  * DESCRIPTION OF ABILITY
  * (or flavor text)

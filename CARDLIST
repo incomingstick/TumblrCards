@@ -1,8 +1,8 @@
-This is a list of cards to be considered, tested, and implemeneted into the game.
+This is a list of cards to be considered, tested, and implemented into the game.
 Thus far everything is untested and subject to change. All cards will be in the same
 form as the Card class to_string() function, with the addition of the card number.
 If you have an idea for a card add it to the list! It will be tested, and possibly
-changed, before being implemeneted.
+changed, before being implemented.
 
 Ooze
 1
@@ -31,7 +31,7 @@ At the start of your turn summon a
 Citizen of Draem
 
 At the end your turn if you have 3 or
-more Citizen of Draem destroy them
+more Citizen of Draem destroys them
 and draw a card.
 0/3
 -004-
@@ -77,7 +77,7 @@ When Reciprocity Angel enters the battlefield
 your opponent gains 5 life.
 
 When Reciprocity Angel leaves the battlefield
-each played loses 5 life.
+each player loses 5 life.
 5/5
 -010-
 
@@ -93,7 +93,7 @@ Give each Citizen of Draem you control +1/+1.
 Malitia Captain
 4
 At the start of combat give each Citizen of Draem
- +1/+1 until end of the turn.
+ +1/+1 until the end of the turn.
 2/2
 -012-
 
@@ -107,7 +107,7 @@ loses 1 life.
 Succubus
 4
 When Succubus enters the battlefield you gain
-1 life and your opponenet loses 1 life.
+1 life and your opponent loses 1 life.
 2/2
 -014-
 
@@ -115,7 +115,7 @@ Grom, Son of Gromp
 6
 At the end of turn, if you have exactly 1 life
 you and your opponent split your life totals
-equally amongst eachother.
+equally amongst each other.
 6/6
 -015-
 
@@ -138,7 +138,7 @@ At the end of turn Addronus gets -3/-3.
 Nannom
 7
 At the end of turn gain a random creature for
-Nannom's controler. Your opponent gains control
+Nannom's controller. Your opponent gains control
 of Nannom.
 3/6
 -018-
@@ -169,14 +169,14 @@ At the end of turn summon an Imp.
 
 Pythius
 6
-At the end of turn target creature swaps its
+At the end of turn, target creature swaps its
 attack and health.
 6/6
 -022-
 
 Beelzebub
 6
-At the end of turn Beelzebub becomes a Prophet
+At the end of turn, Beelzebub becomes a Prophet
 and gains the ability "At the start of
 turn Prophet becomes a 6/6 Beelzebub."
 6/6
@@ -228,13 +228,13 @@ becomes a 1/1 Citizen of Draem
 Priest of Belial
 3
 At the end of the turn Priest of Belial
-deals 1 damage to it's controler.
+deals 1 damage to it's controller.
 3/3
 -030-
 
 Priest of Astaroth
 3
-At the end of turn destroy an Citizen of Draem
+At the end of turn, destroy a Citizen of Draem
 3/3
 -031-
 
@@ -367,16 +367,16 @@ from any source.
 
 Void Creeper
 2
-When Void Creeper enters the battlefield
-return an opponents creature to its owners
+When Void Creeper enters the battlefield,
+return an opponent's creature to its owners
 hand.
 1/1
 -047-
 
 Void Stalker
 4
-When Void Stalker enters the battlefield
-return taget creature to its owners hand.
+When Void Stalker enters the battlefield,
+return target creature to its owner's hand.
 3/3
 -048-
 
@@ -444,7 +444,7 @@ Marauder you control.
 
 Shaman of the Far
 4
-When Shaman of the Far Land dies summon a
+When Shaman of the Far Land dies, summon a
 Goblin Marauder for each damage Shaman of
 the Far Land took.
 3/1
@@ -452,7 +452,7 @@ the Far Land took.
 
 Shaman of the Near
 6
-When Shaman of the Near Land dies summon a
+When Shaman of the Near Land dies, summon a
 Goblin Marauder for each Goblin Marauder
 you control.
 3/2
@@ -469,8 +469,8 @@ Give each Goblin Marauder you control +0/+2.
 Shaman of the Cold
 7
 When Shaman of the Cold Land enters the
-battlefield creaturs your opponent control
-cannont attack until the start of your next
+battlefield creatures, your opponent control
+cannot attack until the start of your next
 turn.
 6/2
 -060-
@@ -497,7 +497,7 @@ may attack the turn they are summoned.
 
 Wolf Pack
 1
-Wold Pack's Attack and Hit Points are equal
+Wolf Pack's Attack and Hit Points are equal
 to the number of Wolf Pack you control.
 
 Whenever a Goblin or Goblin Marauder you
@@ -511,7 +511,7 @@ When Goblin Wolf Rider enters the
 battlefield give each Wolf Pack you control
 +1/+1.
 Whenever Goblin wolf Rider deals damage to a
-player summon a Goblin Wolf Rider.
+player, summon a Goblin Wolf Rider.
 3/1
 -064-
 
@@ -550,7 +550,7 @@ Goblin's you control.
 
 Goblin Diety
 20
-When Goblin Diety dies summon a Tribal Leader
+When Goblin Diety dies, summon a Tribal Leader
 for each player.
 10/10 
 -069-
@@ -659,7 +659,7 @@ summon an Elf Native.
 Diplomat of Gelfind
 3
 Diplomat of Gelfind gets +1/+0 for each
-Citizen of Draemyou control.
+Citizen of Draem you control.
 
 Diplomat of Gelfind gets +0/+1 for each
 Elf Native you control.
@@ -669,7 +669,7 @@ Elf Native you control.
 Masterwork Elf
 4
 When Masterwork Elf enters the battlefield
-if you control an Citizen of Draem, summon a Bell Ringer.
+if you control a Citizen of Draem, summon a Bell Ringer.
 4/4
 -084-
 
@@ -689,9 +689,9 @@ Treant.
 2/2
 -086-
 
-Forrestwalker
+Forrest walker
 4
-Each Treant you conntrol gets +1/+1 for each
+Each Treant you control gets +1/+1 for each
 Elf Native you control.
 4/4
 -087-
@@ -705,7 +705,7 @@ When Elf Historian dies summon 2 Elf Native.
 Graveyard Worm
 2
 Graveyard Worm's attack and HP are equal to
-the number of creatures in your discard pile.
+the number of creatures in your discard piles.
 X/X
 -089-
 
@@ -720,8 +720,8 @@ Sewer Slime
 5
 When Sewer Slime deals damage to a creature,
 destroy that creature.
-When Sewer Slime enters the battlefield
-destroy target creature an opponent controls.
+When Sewer Slime enters the battlefield,
+destroy target creature opponent controls.
 2/2
 -091-
 
@@ -743,7 +743,7 @@ that creature and Experimental Wizard.
 Elder Crusader
 3
 When Elder Crusader dies give target creature
-+1/+1, if it is an Citizen of Draemgive it
++1/+1, if it is a Citizen of Draem give it
 +2/+2.
 2/2
 -094-
@@ -816,7 +816,7 @@ at least 5 other creatures.
 Fairy Godmother
 3
 When Fairy Godmother enters the battlefield put
-the bottom card of your deck in to your hand.
+the bottom card of your deck into your hand.
 
 Fairy Godmother cannot attack unless you have
 at least 5 other creatures.
@@ -860,7 +860,7 @@ Child of the First
 25
 When Child of the First enters the battlefield
 each players life becomes 25. Shuffle all
-cards back in to their owners deck. Each
+cards back into their owner's deck. Each
 player draws 7 cards. Your turn ends.
 
 You may only have one Child of the First in
@@ -908,13 +908,13 @@ Burial Ground's HP is equal to your opponents
 life total.
 
 Whenever a creature other than a Zombie dies,
-summon a Zombie for that creatures controler.
+summon a Zombie for that creature's controller.
 0/X
 -113-
 
 Plaugebearer
 2
-Plaugebearer deals damage to a creatures
+Plaugebearer deals damage a creatures
 attack instead of its health.
 1/2
 -114-
@@ -956,7 +956,7 @@ Garden of Elar
 Garden of Elar's HP is equal to your opponents
 life total.
 
-Your opponents spells cost 2 more to cast.
+Your opponent's spell cost 2 more to cast.
 0/X
 -119-
 
@@ -974,14 +974,14 @@ Hero of Time
 20
 Your opponent has 3 turns to destroy Hero of
 Time. If they don't, destroy all other
-creatures and your opponenets life becomes 3.
+creatures and your opponent's life becomes 3.
 1/10
 -121-
 
 Siren Caller
 2
 When Siren Caller enters the battlefield your
-oppoenent puts the top 7 of their library
+opponent put the top 7 of their library
 into their discard pile.
 2/2
 -122-
@@ -990,7 +990,7 @@ Siren Mystic
 5
 When Siren Mystic deals damage to a player,
 that player puts the top 10 cards of his or
-her libraray into his or her discard pile. 
+her library into his or her discard pile. 
 2/4
 -123-
 
@@ -998,7 +998,7 @@ her libraray into his or her discard pile.
 Trapped Seafarer
 3
 When Trapped Seafarer dies each player puts
-the top 8 cards of his or her library in to
+the top 8 cards of his or her library into
 his or her discard pile.
 3/2
 -124-
@@ -1019,7 +1019,7 @@ dealt.
 Kingdom of the Beautiful
 10
 Kingdom of the Beautiful's HP is equal to your
-opponenets life total.
+opponents life total.
 
 If your opponent has no cards left in his or
 her deck, they lose the game.
@@ -1033,7 +1033,7 @@ directly.
 
 When Countess of Mer would deal damage,
 prevent that damage and your opponent puts
-the top X cards of his or her library in to
+the top X cards of his or her library into
 his or her discard pile, where X is the damage
 Countess of Mer dealt.
 4/2
@@ -1046,7 +1046,7 @@ battlefield, if you control a Trapped Seafarer
 destroy it and summon a Zombie.
 
 When Ghost of the Drowned dies your opponents
-puts the top X cards of his or her libarary
+puts the top X cards of his or her library
 into his or her discard pile, where X is the
 number of Zombie's you control.
 2/2
@@ -1074,7 +1074,7 @@ where X is the number of Goblins you control.
 
 The Flying Dutchman
 The Flying Dutchman's HP is equal to your
-opponenets life total.
+opponent's life total.
 
 Whenever a creature you control deals damage,
 your opponent puts the top card of his or her
@@ -1085,7 +1085,7 @@ deck in to his or her discard pile.
 Royal Caravel
 2
 Royal Caravel takes 1 less damage from
-Zombie's.
+Zombies.
 2/1
 -132-
 
@@ -1098,7 +1098,7 @@ up to 2 Zombies an opponent controls.
 
 Royal Frigate
 10
-When Royal Frigate dies summon 2 Trapped
+When Royal Frigate dies, summon 2 Trapped
 Seafarer for each player.
 5/5
 -134-
@@ -1116,10 +1116,10 @@ Navy.
 
 The Royal Navy
 5
-When the Royal Navy is played from a players
-hand summon a Royal Frigate for each player.
+When the Royal Navy is played from a player's
+hand, summon a Royal Frigate for each player.
 
-Whenever The Royal Navy takes damage summon a
+Whenever The Royal Navy takes damage, summon a
 Royal Caravel.
 a
 5/5
@@ -1130,8 +1130,8 @@ Fairy Chasm
 Fairy Chasm's HP is equal to your opponents
 life total.
 
-Fairy Chasm counts as 2 creatues of any name
-for any card that requires a count of creatues.
+Fairy Chasm counts as 2 creatures of any name
+for any card that requires a count of creatures.
 0/X
 -137-
 
@@ -1140,7 +1140,7 @@ The Lost Sea
 The Lost Sea's HP is equal to your opponents
 life total.
 
-At the end of each players turn, that player
+At the end of each player's turn, that player
 must sacrifice a creature.
 0/X
 -138-
@@ -1173,11 +1173,11 @@ opponents life total.
 
 When Political Embassy enters the battlefield
 replace all Citizen of Draems on the field
-with Social Justice Warrior's.
+with Social Justice Warriors.
 
 When Political Embassy dies replace all cards
 in your hand and deck with Social Justice
-Warrior's.
+Warriors.
 0/X
 -141-
 
@@ -1186,8 +1186,8 @@ Sacred Battleground
 Sacred Battleground's HP is equal to your
 opponents life total.
 
-Whenever a Barbarian enters the battlefield
-summon another Barbarian for it's controler.
+Whenever a Barbarian enters the battlefield,
+summon another Barbarian for its controller.
 0/X
 -142-
 
@@ -1196,7 +1196,7 @@ City of Naara
 City of Naara's HP is equal to your opponents
 life total.
 
-All creatues get +2/+2 but take twice as much
+All creatures get +2/+2 but take twice as much
 damage from any source.
 0/X
 -143-
@@ -1232,13 +1232,13 @@ gains that much life.
 Gelfind Wall
 2
 Gelfind Wall Costs 1 more for each creature an
-opponenet controls.
+opponent controls.
 0/7
 -148-
 
 The Tinkler
 7
-At the beginning of each players turn, that
+At the beginning of each player turn, that
 player gains 3 life.
 0/3
 -149-

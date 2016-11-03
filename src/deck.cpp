@@ -24,7 +24,7 @@ Deck::Deck()
 }
 
 /*
- * Creates a new Deck with the given name
+ * Create a new Deck with the given name
  */
 Deck::Deck(string name)
 	:deckName{ name },
@@ -101,7 +101,7 @@ Card* Deck::draw_card(){
 	return ret;
 }
 
-// removes the card at the given index and returns it
+// remove the card at the given index and returns it
 // shifting all the cards up one
 Card* Deck::get_card(size_t index) {
 	well_formed();
@@ -116,7 +116,7 @@ Card* Deck::get_card(size_t index) {
 }
 
 /*
- * removes the top num cards from the deck and returns
+ * remove the top num cards from the deck and returns
  * a "Deck" as the drawn cards. shifts all
  * the cards up num
  */
@@ -270,7 +270,7 @@ string Deck::to_file() {
 }
 
 /*
- * Convers the Deck to a string 
+ * Converts the Deck to a string 
  */
 string Deck::to_string() const {
     string ret;
