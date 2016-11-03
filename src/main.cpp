@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
         // TODO we should have cla's for testing purposes
     }
 
-	// Creats the main menu to start the game
+	// Creates the main menu to start the game
 	MainMenu menu;
 	
 	// Displays main menu

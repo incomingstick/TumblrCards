@@ -31,14 +31,15 @@ Point::Point(int x_coord, int y_coord) {
  * Point clone constructor 
  */
 Point::Point(const Point& clone) {
-    // TODO
+    x = clone.x;
+    y = clone.y;
 }
 
 /*
  * Default Point destructor
  */
 Point::~Point() {
-    // TODO
+    // nothing to do
 }
 
 /*
@@ -89,7 +90,7 @@ string Point::to_string() {
 	ret += ",";
 	ret += std::to_string(y);
 	ret += ")";
-	
+
 	return ret;
 }
 /*

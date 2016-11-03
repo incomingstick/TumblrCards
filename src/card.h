@@ -24,7 +24,7 @@ public:
 	Card();
 	virtual ~Card();
 
-	// builds card base on input from file
+	// build card base on input from file
 	void build_card(std::string arg);
 
 	// should return true if the trigger goes off
