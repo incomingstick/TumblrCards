@@ -10,15 +10,18 @@
 /*
  * Default Rectangle constructor
  */
-Rectangle::Rectangle() : ImageMap(), width(0), height(0) {
+Rectangle::Rectangle() : ImageMap(),
+    width(0),
+    height(0) {
 }
 
 /*
  * Creates a width x height Rectangle at the point (0, 0)
  */
 Rectangle::Rectangle(size_t width, size_t height) : ImageMap(),
-                                                    width(width),
-                                                    height(height) {
+    width(width),
+    height(height) {
+
 }
 
 /*
@@ -28,6 +31,7 @@ Rectangle::Rectangle(int x, int y, size_t width, size_t height)
     : ImageMap("", x, y),
       width(width),
       height(height) {
+
 }
 
 /*
@@ -35,6 +39,7 @@ Rectangle::Rectangle(int x, int y, size_t width, size_t height)
  */
 Rectangle::Rectangle(Point pnt)
     : ImageMap("", pnt.get_x(), pnt.get_y()), width(1), height(1) {
+
 }
 
 /*
@@ -50,7 +55,7 @@ Rectangle::Rectangle(const Rectangle &clone)
  * Default Rectangle destructor
  */
 Rectangle::~Rectangle() {
-    // Does nothing
+    // Does nothing yet
 }
 
 /*
@@ -100,8 +105,7 @@ bool Rectangle::intersects(Rectangle rect) {
  * Returns true if this Rectangle and the given Rectangle rect are equal in every way.
  */
 bool Rectangle::equals(Rectangle rect) {
-    return (dynamic_cast<ImageMap&>(*this).equals(
-                                            static_cast<const ImageMap&>(rect)))
+    return (dynamic_cast<ImageMap&>(*this).equals(static_cast<const ImageMap&>(rect)))
         && (rect.width == width)
         && (rect.height == height);
 }
