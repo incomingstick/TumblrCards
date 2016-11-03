@@ -160,7 +160,7 @@ string rightpad(string str, int len, char ch) {
 }
 
 /*
- * Prints the menu of the given striing type to cout
+ * Prints the menu of the given string type to cout
  */
 bool print_menu(string type) {
     string screen_disp = get_display_screen(type);
@@ -170,7 +170,7 @@ bool print_menu(string type) {
 
 /*
  * Clears the terminal then prints the menu of the
- * given striing type to cout
+ * given string type to cout
  */
 bool print_menu_clr(string type) {
     clear_console();

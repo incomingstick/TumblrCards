@@ -41,7 +41,7 @@ Deck::~Deck() {
 }
 
 /*
- * Clone constructore Sets all attributes of this
+ * Clone constructor sets all attributes of this
  * Deck to the clone
  */
 Deck::Deck(const Deck &clone)
@@ -201,7 +201,7 @@ bool Deck::add_card(Card* card, size_t index) {
  *		A deck may not have any nullptr between 0 and count
  */
 bool Deck::well_formed() {
-	// may not be larger than 60 cards
+	// may not be larger than 20 cards
 	if(*count > deck.size()) return print_err("Count is larger than 20");
 	for(size_t i = 0; i < *count; i++) {
 		// checks to make sure count is not larger than the size of the deck
