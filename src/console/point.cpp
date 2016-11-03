@@ -39,6 +39,7 @@ Point::Point(const Point& clone) {
  * Default Point destructor
  */
 Point::~Point() {
+    // nothing to do
 }
 
 /*
@@ -89,7 +90,7 @@ string Point::to_string() {
 	ret += ",";
 	ret += std::to_string(y);
 	ret += ")";
-	
+
 	return ret;
 }
 /*
