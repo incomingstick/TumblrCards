@@ -27,7 +27,7 @@ public:
     bool contains(Point pt);
     bool contains(Rectangle rect);
     bool intersects(Rectangle rect);
-    bool equals(Rectangle rect);
+    virtual bool equals(Rectangle rect);
     void set_bounds(int x_coord, int y_coord, size_t width, size_t height);
     Rectangle get_intersection(Rectangle rect);
     Rectangle get_union(Rectangle rect);

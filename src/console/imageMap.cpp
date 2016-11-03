@@ -122,37 +122,37 @@ bool ImageMap::intersects(ImageMap img) {
  */
 void ImageMap::parse_flag(string flag, string text, string align) {
     size_t found = to_string().find(flag);
-    
+
     // flag string not found
     if(found == string::npos) return;
-    
+
     int found_y = found / (get_width() + 1);
     int found_x = found - (found_y * (get_width() + 1));
-    
+
     // Something went wrong???
     //if(map[found_y][found_x] != flag.at(0)) return;
-    
+
 	if(align == "center") {
         // TODO Align the text centered on the flag
-        
+
         // do left-pad here if smaller than flag
         text = leftpad(text, flag.size());
-        
+
         found_x = found_x - (text.size() / 2) + (flag.size() / 2);
-        
+
         for(size_t i = 0; i < text.size(); i++) {
             if(i > map[found_y].size()) break;
             if(found_x + i < 0) continue;
-            
+
             map[found_y][found_x + i] = text[i];
         }
     } else if(align == "left-pad") {
         // TODO Align the the last char of text with
         // the '}' of the flag adding spaces as needed
-        
+
         // do left-pad here if smaller than flag
         text = leftpad(text, flag.size());
-        
+
         for(size_t i = 0; i < text.size(); i++) {
             if(i > map[found_y].size()) break;
             map[found_y][found_x + i] = text[i];
@@ -160,12 +160,12 @@ void ImageMap::parse_flag(string flag, string text, string align) {
     } else if(align == "right-pad") {
         // TODO Align the the first char of text with
         // the '{' of the flag adding spaces as needed
-        
+
         // do right-pad here if smaller than flag
         text = rightpad(text, flag.size());
-        
+
         found_x += flag.size() - 1;
-        
+
         for(size_t i = 0; i < text.size(); i++) {
             map[found_y][found_x - i] = text[text.size() - i - 1];
         }
@@ -184,4 +184,25 @@ string ImageMap::to_string() {
 	}
     ret.pop_back();
 	return ret;
+}
+
+/*
+ * Returns true if this ImageMap and the given ImageMap rect are equal in every
+ * way.
+ */
+bool ImageMap::equals(const ImageMap& imagemap)
+{
+    if(map.size() != imagemap.map.size())
+        return false;
+    for(vector< vector<char> >::size_type i = 0; i < map.size(); i++)
+    {
+        if(map[i].size() != imagemap.map[i].size())
+            return false;
+        for(vector<char>::size_type j = 0; j < map[i].size(); j++)
+        {
+            if(map[i][j] != imagemap.map[i][j])
+                return false;
+        }
+    }
+    return (x == imagemap.x) && (y == imagemap.y);
 }
