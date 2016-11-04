@@ -40,6 +40,7 @@ public:
     void parse_flag(std::string flag = "{0}",
                     std::string text = "",
                     std::string align = "center");
+    bool equals(const ImageMap& imagemap);
 };
 
 #endif /* SRC_IMAGEMAP_H_ */
