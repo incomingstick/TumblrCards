@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(tumblrcards)
 set(tumblrcards_VERSION_MAJOR 0)
 set(tumblrcards_VERSION_MINOR 0)
-set(tumblrcards_VERSION_TWEAK 4)
+set(tumblrcards_VERSION_TWEAK 5)
 set(tumblrcards_VERSION_SUFFIX "dev")
 add_definitions(-DVERSION_STR="v${tumblrcards_VERSION_MAJOR}.${tumblrcards_VERSION_MINOR}.${tumblrcards_VERSION_TWEAK}-${tumblrcards_VERSION_SUFFIX}")
 
