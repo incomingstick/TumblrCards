@@ -118,7 +118,7 @@ void Rectangle::set_bounds(int x_coord, int y_coord, size_t width, size_t height
     this->width = width;
     this->height = height;
     set_x(x_coord);
-		set_y(y_coord);
+	set_y(y_coord);
 }
 
 /*
@@ -126,17 +126,18 @@ void Rectangle::set_bounds(int x_coord, int y_coord, size_t width, size_t height
  * this Rectangle and the given Rectangle rect
  */
 Rectangle Rectangle::get_intersection(Rectangle rect) {
-    Rectangle ret;
-    rect.width = 0;
-    rect.height = 0;
-    rect.set_x(0);
-    rect.set_y(0);
     if(!intersects(rect))
-    {
-        return rect;
-    }
-    // TODO
-    return ret;
+        return Rectangle(0, 0, 0, 0);
+
+    int x1, y1, x2, y2;
+
+    x1 = rect.get_x() >= get_x() ? rect.get_x() : get_x();
+    y1 = rect.get_y() >= get_x() ? rect.get_y() : get_y();
+
+    x2 = rect.get_x() + rect.width >= get_x() + width ? get_x() + width : rect.get_x() + rect.width;
+    y2 = rect.get_y() + rect.height >= get_y() + height ? get_y() + height : rect.get_y() + rect.height;
+
+    return Rectangle(x1, y1, x2-x1, y2-y1);
 }
 
 /*
@@ -144,9 +145,15 @@ Rectangle Rectangle::get_intersection(Rectangle rect) {
  * this Rectangle and the given Rectangle rect
  */
 Rectangle Rectangle::get_union(Rectangle rect) {
-    Rectangle ret;
-    // TODO
-    return ret;
+    int x1, y1, x2, y2;
+
+    x1 = rect.get_x() < get_x() ? rect.get_x() : get_x();
+    y1 = rect.get_y() < get_x() ? rect.get_y() : get_y();
+
+    x2 = rect.get_x() + rect.width < get_x() + width ? get_x() + width : rect.get_x() + rect.width;
+    y2 = rect.get_y() + rect.height < get_y() + height ? get_y() + height : rect.get_y() + rect.height;
+
+    return Rectangle(x1, y1, x2-x1, y2-y1);
 }
 
 /*
@@ -189,4 +196,91 @@ void Rectangle::set_size(size_t width, size_t height) {
 void Rectangle::translate(int dx, int dy) {
     set_x(get_x() + dx);
     set_y(get_y() + dy);
+}
+
+/*
+ * Returns the height of this Rectangle
+ */
+size_t Rectangle::get_height() {
+    return height;
+}
+
+/*
+ * Returns the width of this Rectangle
+ */
+size_t Rectangle::get_width() {
+    return width;
+}
+
+/*
+ * Sets the height of this Rectangle
+ */
+void Rectangle::set_height(size_t height) {
+    this->height = height;
+}
+
+/*
+ * Sets the width of this Rectangle
+ */
+void Rectangle::set_width(size_t width) {
+    this->width = width;
+}
+
+/*
+ * Return true if this Rectangle is both the height and the width are zeros
+ */
+bool Rectangle::is_empty() {
+    if (get_height() == 0 && get_width() == 0)
+        return true;
+
+    return false;
+}
+
+/*
+ * Returns true if this Rectangle is not empty
+ * and its width is equal to its height
+ */
+bool Rectangle::is_square() {
+    if (!is_empty() && width == height )
+        return true;
+    
+    return false;
+}
+
+/*
+ * Enlarges this Rectangle in width by the amount dwidth
+ * and in height by the amount dheight
+ */
+void Rectangle::enlarge(int dwidth, int dheight) {
+    set_width(get_width() + dwidth);
+    set_height(get_height() + dheight);
+}
+
+/*
+ * Returns true if the width or the height, but not both, of this Rectangle is zero
+ */
+bool Rectangle::is_line() {
+    if(!is_empty() && (width == 0 || height == 0))
+        return true;
+
+    return false;
+}
+
+/*
+ * Returns this Rectangle as a string in the format (x, y) & (width, height).
+ */
+std::string Rectangle::to_string() {
+    std::string ret;
+
+    ret += "(";
+    ret += std::to_string(get_x());
+    ret += ", ";
+    ret += std::to_string(get_y());
+    ret += ") & (";
+    ret += std::to_string(width);
+    ret += ", ";
+    ret += std::to_string(height);
+    ret += ")";
+
+    return ret;
 }
