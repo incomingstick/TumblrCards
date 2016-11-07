@@ -10,7 +10,7 @@
  */
 
 #include <iostream>
-#include "/home/agalal/develop/cards/TumblrCards/src/console/rectangle.h"
+#include "../console/rectangle.h"
 
 using namespace std;
 
