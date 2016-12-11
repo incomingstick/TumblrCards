@@ -36,6 +36,15 @@ public:
     void set_location(Point pnt);
     void set_size(size_t width, size_t height);
     void translate(int dx, int dy);
+    size_t get_height();
+    size_t get_width();
+    void set_height(size_t height);
+    void set_width(size_t width);
+    bool is_empty();
+    bool is_square();
+    void enlarge(int dwidth, int dheight);
+    bool is_line();
+    std::string to_string();
 };
 
 #endif /* SRC_RECTANGLE_H_ */
